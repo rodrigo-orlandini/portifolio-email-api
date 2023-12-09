@@ -1,0 +1,11 @@
+# IDE additional files
+.vscode
+
+# Dependencies
+node_modules
+
+# Output directory
+build
+
+# Environment variables
+.env
