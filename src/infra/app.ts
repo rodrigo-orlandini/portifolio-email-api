@@ -4,7 +4,7 @@ import { ZodError } from "zod";
 
 import { env } from "../env";
 
-import { ownerRoutes } from "./routes";
+import { routes } from "./routes";
 
 export const app = fastify();
 
@@ -12,7 +12,7 @@ app.register(cors, {
 	origin: "*"
 });
 
-app.register(ownerRoutes);
+app.register(routes);
 
 app.setErrorHandler((error, _request, reply) => {
 	if(error instanceof ZodError) {
