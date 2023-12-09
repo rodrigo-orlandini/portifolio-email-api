@@ -4,7 +4,7 @@ describe("Send Me Email Controller", () => {
 	it("should be able to send me email", async () => {
 		const response = await app.inject({
 			method: "POST",
-			url: "/owner/contact",
+			url: "/contact",
 			body: {
 				name: "John Doe",
 				email: "johndoe@example.com",
